@@ -1,0 +1,139 @@
+.rating-stars {
+  text-align: left;
+  font-style: normal;
+  display: inline-block;
+  position: relative;
+  unicode-bidi: bidi-override;
+  font-size: 32px;
+  height: 35px;
+  margin-top: 0.5rem;
+}
+.rating-stars::before {
+  display: block;
+  content: "★★★★★";
+  color: #fff;
+}
+.rating-stars::after {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "★★★★★";
+  width: 0;
+  color: #4caf50;
+  overflow: hidden;
+  height: 100%;
+  width: calc(var(--rating) * 20%);
+}
+.rating-stars-deep::after {
+  color: #609b6c;
+}
+.profile {
+  margin: auto 0rem 5rem 5rem;
+}
+.rating {
+  color: #4caf50;
+  font-size: 32px;
+  font-weight: 600;
+}
+.rating-deep {
+  color: #609b6c;
+}
+.profile-name,
+.profile-role {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.profile-role {
+  font-weight: 500;
+  font-size: 22px;
+}
+.profile-description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 2rem;
+  text-align: justify;
+}
+.session-booker {
+  border: none;
+  outline: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+.session-booker p {
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+.session-button {
+  box-shadow: 15px 10px 100px #4caf50;
+  background-color: #4caf50;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.session-deep {
+  background-color: #609b6c;
+  box-shadow: 15px 10px 100px #7abdb7;
+}
+.rating-num{
+  height: calc(26px + 0.5rem);
+}
+.rating-num,
+.profile-name-wrapper,
+.ratings-stars-wrapper,
+.profile-role-wrapper,
+.profile-description-wrapper {
+  position: relative;
+}
+.ratings-stars-wrapper {
+  width: 150px;
+  height: 50px;
+}
+.rating-passive,
+.rating-stars-passive,
+.profile-name-passive,
+.profile-role-passive,
+.profile-description-passive {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 1400px){
+  .rating-stars {
+    font-size: 45px;
+    height: 50px;
+    margin: 1rem 0;
+  }
+  .rating{
+    font-size: 45px;
+  }
+  .profile-name,
+  .profile-role{
+    font-size: 34px;
+    margin-top: 0.5rem;
+  }
+  .profile-name{
+    margin-top: 2rem;
+  }
+  .profile-description{
+    font-size: 22px;
+  }
+  .session-booker{
+    width: 300px;
+    height: 60px;
+  }
+  .session-booker p{
+    font-size: 30px;
+  }
+}

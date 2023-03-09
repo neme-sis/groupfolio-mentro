@@ -1,0 +1,128 @@
+.profile-icon-wrapper {
+  position: relative;
+}
+.profile-icon-wrapper img {
+  height: 200px;
+}
+.profile-icon-passive {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.profile-handler .person-names {
+  width: 300px;
+  margin-top: 2rem;
+  height: 60px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.person-names div {
+  width: calc(5 * (300px + 2rem));
+  position: absolute;
+  left: 0;
+  height: 100%;
+  display: flex;
+  transition: left 500ms;
+}
+.person-names div h2 {
+  background-color: #00a1072b;
+  padding: 0.5rem 2rem;
+  border-radius: 6px;
+  text-align: center;
+  width: 300px;
+  margin-right: 2rem;
+  flex: 1;
+}
+.profile-handler {
+  position: relative;
+  top: 30vw;
+  transform: translateY(-100px);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-header-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.user-handler {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.user-handler i {
+  display: block;
+  height: 40px;
+  aspect-ratio: 1;
+  background-color: #4caf50;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 15vw;
+  color: white;
+  cursor: pointer;
+}
+.user-handler-deep i {
+  background-color: #609b6c;
+}
+
+/* animation code starts here */
+.profile-icon-enter {
+  transform: rotate(-90deg);
+  opacity: 0.25;
+}
+.profile-icon-enter-active {
+  transform: rotate(0deg);
+  opacity: 1;
+  transition: all 500ms;
+}
+.profile-icon-exit {
+  opacity: 0.75;
+  transform: rotate(0deg);
+}
+.profile-icon-exit-active {
+  opacity: 0;
+  transform: rotate(-90deg);
+  transition: all 500ms;
+}
+
+.profile-icon-right-enter {
+  transform: rotate(90deg);
+  opacity: 0.25;
+}
+.profile-icon-right-enter-active {
+  transform: rotate(0deg);
+  opacity: 1;
+  transition: all 500ms;
+}
+.profile-icon-right-exit {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.profile-icon-right-exit-active {
+  opacity: 0;
+  transform: rotate(90deg);
+  transition: all 500ms;
+}
+/*Media Query*/
+@media screen and (min-width: 1400px){
+  .profile-icon-wrapper img {
+    height: 300px;
+  }
+  .person-names div h2{
+    font-size: 30px;
+  }
+  .user-handler i{
+    height: 60px;
+  }
+  .profile-handler{
+    transform: translateY(-150px);
+  }
+}
