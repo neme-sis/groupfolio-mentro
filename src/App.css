@@ -1,0 +1,21 @@
+.App {
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+}
+.container-left {
+  width: 37.5%;
+  display: flex;
+}
+.container-right {
+  flex: 1;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  width: 100%;
+}

@@ -1,0 +1,128 @@
+/*Animation code starts here*/
+
+.rating-number-enter {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  top: 0.5rem;
+  left: 0.5rem;
+  opacity: 0;
+}
+.rating-number-enter-active {
+  padding: 0;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 500ms;
+}
+.rating-number-exit {
+  opacity: 0.75;
+}
+.rating-number-exit-active {
+  opacity: 0;
+  transition: opacity 350ms;
+}
+
+.rating-number-right-enter {
+  opacity: 0;
+  padding: 0;
+}
+.rating-number-right-enter-active {
+  opacity: 1;
+}
+.rating-number-right-exit {
+  opacity: 0.75;
+  padding: 0;
+}
+.rating-number-right-exit-active {
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transition: all 500ms;
+}
+.rating-number-right-exit-done {
+  padding: 0;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.rating-stars-animation-enter {
+  transform: scale(0);
+  transform-origin: top left;
+}
+.rating-stars-animation-enter-active {
+  transform: scale(1);
+  transition: transform 500ms;
+}
+.rating-stars-animation-exit {
+  opacity: 1;
+}
+.rating-stars-animation-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.rating-stars-animation-exit-done {
+  opacity: 0;
+}
+
+.rating-stars-animation-reverse-enter {
+  opacity: 0;
+}
+.rating-stars-animation-reverse-enter-active {
+  opacity: 1;
+  transition: 500ms opacity;
+}
+.rating-stars-animation-reverse-exit {
+  transform: scale(1);
+  opacity: 1;
+  transform-origin: top left;
+}
+.rating-stars-animation-reverse-exit-active {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 500ms;
+}
+.rating-stars-animation-reverse-exit-done {
+  opacity: 0;
+}
+
+.session-booker-div-right-enter {
+  opacity: 0;
+}
+.session-booker-div-right-enter-active {
+  opacity: 1;
+  transition: 500ms opacity;
+}
+.session-booker-div-right-exit {
+  transform: scale(1);
+  opacity: 1;
+  transform-origin: top left;
+}
+.session-booker-div-right-exit-active {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 500ms;
+}
+.session-booker-div-right-exit-done {
+  opacity: 0;
+}
+
+.session-booker-div-enter {
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: top left;
+}
+.session-booker-div-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 500ms;
+}
+.session-booker-div-exit {
+  opacity: 1;
+}
+.session-booker-div-exit-active {
+  opacity: 0;
+  transition: all 500ms;
+}
