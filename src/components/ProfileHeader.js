@@ -48,6 +48,7 @@ const ProfileHeader = ({
               className={`profile-icon-active ${
                 !transition && "profile-icon-passive"
               }`}
+              loading={"lazy"}
             />
           </CSSTransition>
           <CSSTransition
@@ -66,6 +67,7 @@ const ProfileHeader = ({
               className={`profile-icon-active ${
                 transition && "profile-icon-passive"
               }`}
+              loading={"lazy"}
             />
           </CSSTransition>
         </div>
