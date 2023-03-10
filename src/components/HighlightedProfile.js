@@ -29,6 +29,7 @@ const HighlightedProfile = ({ userId }) => {
                 i + 1
               } profile-${userId}`}
               key={i}
+              loading={"lazy"}
             />
           ))}
         </div>
