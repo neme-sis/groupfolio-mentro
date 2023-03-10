@@ -73,7 +73,7 @@
   z-index: 10;
 }
 .session-button {
-  box-shadow: 15px 10px 100px #4caf50;
+  box-shadow: 20px 14px 130px #4caf50;
   background-color: #4caf50;
   height: 100%;
   width: 100%;
@@ -83,9 +83,9 @@
 }
 .session-deep {
   background-color: #609b6c;
-  box-shadow: 15px 10px 100px #7abdb7;
+  box-shadow: 20px 14px 130px #7abdb7;
 }
-.rating-num{
+.rating-num {
   height: calc(26px + 0.5rem);
 }
 .rating-num,
@@ -109,31 +109,37 @@
   left: 0;
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1400px) {
   .rating-stars {
     font-size: 45px;
     height: 50px;
     margin: 1rem 0;
   }
-  .rating{
+  .rating {
     font-size: 45px;
   }
   .profile-name,
-  .profile-role{
+  .profile-role {
     font-size: 34px;
     margin-top: 0.5rem;
   }
-  .profile-name{
+  .profile-name {
     margin-top: 2rem;
   }
-  .profile-description{
+  .profile-description {
     font-size: 22px;
   }
-  .session-booker{
+  .session-booker {
     width: 300px;
     height: 60px;
   }
-  .session-booker p{
+  .session-booker p {
     font-size: 30px;
+  }
+  .session-button {
+    box-shadow: 25px 15px 150px #4caf50;
+  }
+  .session-deep {
+    box-shadow: 25px 15px 150px #7abdb7;
   }
 }
